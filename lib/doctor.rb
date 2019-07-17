@@ -12,6 +12,7 @@ class Doctor
     @patient = patient
     self.patients << patient
     @patient = Appointment.new(date, patient, self)
+    self.appointments << @patient
   end
 
 end
