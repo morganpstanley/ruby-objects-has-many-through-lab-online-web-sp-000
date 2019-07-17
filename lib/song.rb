@@ -11,7 +11,7 @@ class Song
     artist.genre << genre
     genre.songs << self
     genre.artists << artist
-    
+
 
 
 
