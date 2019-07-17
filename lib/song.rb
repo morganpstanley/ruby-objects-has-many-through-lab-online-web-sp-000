@@ -11,7 +11,7 @@ class Song
     artist.song << name
     if artist.genre.none?(genre)
       artist.genre << genre
-    genre.song = self
+    end
   end
 
 end
