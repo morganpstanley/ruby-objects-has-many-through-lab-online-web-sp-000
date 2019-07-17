@@ -1,4 +1,5 @@
 class Song
+  attr_accessor :name, :songs, :artists, :genres
 
   @@all = []
 
@@ -6,6 +7,9 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
+    @songs = []
+    @artists = []
+    @genres = []
     @@all << self
     artist.songs << self
     artist.genre << genre
