@@ -9,8 +9,7 @@ class Song
     @genre = genre
     @@all << self
     artist.songs << name
-    if artist.genre.none?(genre)
-      artist.genre << genre
+    artist.genre << genre
     end
   end
 
