@@ -10,9 +10,11 @@ class Song
     @@all << self
     artist.songs << self
     if genre.all.none? {|genre| genre == @genre}
-      @genre.songs << song
-    else
-      new_genre = Genre.new(@genre)
+      genre = Genre.new(@genre)
+    end
+    genre.songs << songs
+    genre.artists << artist
+    artist.genres << genre
   end
 
 end
