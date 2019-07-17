@@ -12,7 +12,7 @@ class Song
     @genres = []
     @@all << self
     artist.songs << self
-    artist.genre << genre
+    artist.genres << genre
     genre.songs << self
     genre.artists << artist
   end
