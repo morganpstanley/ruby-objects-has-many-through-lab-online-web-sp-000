@@ -14,7 +14,6 @@ class Patient
     @date = date
     @doctor = doctor
     @name = Appointment.new(date, self, doctor)
-    self.appointments << @name
   end
 
 
