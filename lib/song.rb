@@ -13,6 +13,10 @@ class Song
     genre.artists << artist
   end
 
+  def self.all
+    @@all
+  end
+
 
 
 
