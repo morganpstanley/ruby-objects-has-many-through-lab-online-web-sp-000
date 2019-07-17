@@ -10,7 +10,6 @@ class Song
     @@all << self
     artist.songs << name
     artist.genre << genre
-    end
   end
 
 end
