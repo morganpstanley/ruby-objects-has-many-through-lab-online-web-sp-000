@@ -15,6 +15,7 @@ class Artist
     @name = name
     @genre = genre
     song = Song.new(name, self, genre)
+    @songs << song
   end
 
   def genres
