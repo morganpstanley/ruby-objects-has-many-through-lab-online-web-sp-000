@@ -9,7 +9,6 @@ class Appointment
     @date = date
     @patient = patient
     @doctor = doctor
-    @@all << self
     doctor.appointments << self
     patient.appointments << self
     @@all << self
