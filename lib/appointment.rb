@@ -11,6 +11,7 @@ class Appointment
     @@all << self
     doctor.appointments << self
     patient.appointments << self
+    @@all << self
   end
 
 
