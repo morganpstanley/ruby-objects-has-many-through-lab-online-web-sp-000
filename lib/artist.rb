@@ -21,5 +21,8 @@ class Artist
     @genres
   end
 
+  def.self.all
+    @@all
+  end
 
 end
