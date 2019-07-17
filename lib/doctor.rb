@@ -18,4 +18,8 @@ class Doctor
     self.appointments << @patient
   end
 
+  def self.all
+    @@all
+  end
+
 end
