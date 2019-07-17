@@ -9,6 +9,7 @@ class Artist
     @songs = []
     @genre = []
     @@all << self
+    binding.pry
   end
 
   def new_song(name, genre)
