@@ -12,6 +12,7 @@ class Artist
     @name = name
     @genre = genre
     self.songs << song
+    self.genre << genre
     song = Song.new(name, self, genre)
 
   def self.all
